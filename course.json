@@ -1,0 +1,100 @@
+{
+  "author": "Me",
+  "description": "欢迎来到Gitcourse课程制作指南。本指南涵盖了Gircourse的基本重要特性，主要包括：项目构成、课件制作、流程控制。",
+  "preload": "scripts/auth.js",
+  "scenarios": [
+    {
+      "description": "一开始，将学习关于gitcourse项目文件目录结构的所有基础内容。",
+      "environment": "registry.cn-hangzhou.aliyuncs.com/envs/gitcourse:test",
+      "shell": "/bin/bash",
+      "steps": [
+        {
+          "oj": "http://online-judge.kfcoding.com/problem/1-2",
+          "program": "scripts/bootstrap.sh",
+          "text": "scenario/ep1/1.md",
+          "title": "项目概览"
+        },
+        {
+          "text": "scenario/ep1/2.md",
+          "title": "发布课程"
+        },
+        {
+          "text": "scenario/ep1/3.md",
+          "title": "访问课程"
+        }
+      ],
+      "title": "Gitcourse基础知识",
+      "vscode_port": 1234
+    },
+    {
+      "description": "接下来，将学习如何制作gitcourse图文课件。",
+      "environment": "registry.cn-hangzhou.aliyuncs.com/envs/gitcourse:test",
+      "shell": "/bin/bash",
+      "steps": [
+        {
+          "text": "scenario/ep3/0.md",
+          "title": "查看已经修改的容器"
+        },
+        {
+          "extraTab": "https://www.w3cschool.cn/markdownyfsm/markdownyfsm-odm6256r.html",
+          "text": "scenario/ep3/1.md",
+          "title": "Markdown语法及规范"
+        },
+        {
+          "text": "scenario/ep3/2.md",
+          "title": "图片插入"
+        }
+      ],
+      "title": "Gitcours图文课件制作"
+    },
+    {
+      "description": "接下来，将学习如何填写gitcourse的配置文件。首先是基础部分",
+      "environment": "registry.cn-hangzhou.aliyuncs.com/envs/gitcourse:v1",
+      "shell": "/bin/bash",
+      "steps": [
+        {
+          "extraTab": "http://gitcourse.kfcoding.com/?compact=true#https://code.kfcoding.com/liuchangfreeman/gitcourse-guide",
+          "text": "scenario/ep4/1.md",
+          "title": "course.json基本字段"
+        },
+        {
+          "extraTab": "http://gitcourse.kfcoding.com/scenarios/0?compact=true#https://code.kfcoding.com/liuchangfreeman/gitcourse-guide",
+          "text": "scenario/ep4/2.md",
+          "title": "scenario基础字段"
+        },
+        {
+          "extraTab": "http://gitcourse.kfcoding.com/?compact=true#https://code.kfcoding.com/liuchangfreeman/gitcourse-guide",
+          "text": "scenario/ep4/3.md",
+          "title": "step基础字段"
+        }
+      ],
+      "title": "Gitcours配置文件:基础部分"
+    },
+    {
+      "description": "接下来，将通过一个例子学习使用gitcourse配置文件的高阶内容。",
+      "environment": "registry.cn-hangzhou.aliyuncs.com/envs/gitcourse:v1",
+      "shell": "/bin/bash",
+      "steps": [
+        {
+          "check": "check/check.sh",
+          "program": "scripts/init.sh",
+          "text": "scenario/ep5/1.md",
+          "title": "配置容器服务"
+        },
+        {
+          "extraTab": "[domain]:[:8888]/index.html",
+          "text": "scenario/ep5/2.md",
+          "title": "访问容器服务"
+        },
+        {
+          "extraTab": "http://www.baidu.com",
+          "text": "scenario/ep5/3.md",
+          "title": "外部网页"
+        }
+      ],
+      "title": "Gitcours配置文件:进阶"
+    }
+  ],
+  "title": "Gitcourse Guide",
+  "version": "1"
+}
